@@ -5,6 +5,7 @@ body {
     font-size: 16px;
     color: #4a4a4a;
     margin: 0;
+    background-color: #f5f4f4;
 }
 
 /* Navigation */
@@ -131,4 +132,88 @@ nav ul li {
     padding: 1rem;
     width: 60%;
     vertical-align: middle;
+}
+
+/* Courses */
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3.5rem;
+    background-color:  #d8d8d8;
+    width: 100%;
+}
+
+.courses h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.courses .course-container-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.courses .course-container-main .course-container {
+    width: 30%;
+    margin: 1rem;
+    background-color: white;
+}
+
+.courses .course-container-main .course-container img {
+    width: 100%;
+}
+
+.courses .course-container-main .course-container .course-words {
+    padding: 1rem;
+}
+
+/* Thesis Exhibit */
+
+h1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.exhibit {
+    display: flex;
+}
+
+.exhibit .video {
+    margin: 2rem 1.5rem;
+    width: 60%;
+}
+
+.exhibit .thesis {
+    margin: 2rem 0;
+    width: 40%;
+}
+
+.exhibit .thesis-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.exhibit .thesis-container img {
+    width: 33%;
+    padding: 1rem;
+}
+
+.exhibit .thesis-container .thesis-words {
+    width: 60%;
+    vertical-align: middle;
+}
+
+/* Footer */
+
+footer {
+    border-top: 1px solid  #d8d8d8;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
 }
