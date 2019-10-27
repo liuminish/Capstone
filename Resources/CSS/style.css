@@ -1,0 +1,78 @@
+/* Shared styles */
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: #4a4a4a;
+    margin: 0;
+}
+
+/* Navigation */
+
+nav {
+    height: 4rem;
+    vertical-align: middle;
+    display: fixed;
+    z-index: 10;
+}
+
+nav img {
+    margin-left: 2rem;
+    height: 2rem;
+    width: auto;
+}
+
+nav .logo1 {
+    font-family: Ubuntu;
+    font-weight: bold;
+}
+
+nav .logo2 {
+    font-family: Ubuntu;
+    font-weight: bold;
+    color: gray;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin-right: 1.5rem;
+}
+
+nav ul li {
+    margin: 0.5rem;
+    display: inline;
+}
+
+/* Banner */
+
+.banner {
+    background-color: #d8d8d8;
+    width: 100%;
+    display: flex;
+}
+
+.banner .banner-img {
+    width: 60%;
+    height: auto;
+    margin: 2rem 1.5rem;
+}
+
+.banner .banner-img img {
+    width: 100%;
+}
+
+.banner .banner-words {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner .banner-words .button {
+    background-color: #4a4a4a;
+    color: white;
+    padding: 0.5rem 3rem;
+    width: 6rem;
+}
+
+
