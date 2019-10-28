@@ -11,7 +11,7 @@ body {
 /* Navigation */
 
 nav {
-    height: 4rem;
+    height: 64px;
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -44,6 +44,10 @@ nav .logo2 {
     color: gray;
 }
 
+nav .mobile {
+    display: none;
+}
+
 nav ul {
     list-style: none;
     float: right;
@@ -55,12 +59,33 @@ nav ul li {
     display: inline;
 }
 
+@media only screen and (max-width: 425px) {
+    
+    nav {
+        justify-content: space-around;
+    }
+
+    nav .logo1, .logo2, ul {
+        display: none;
+    }
+
+    nav .logo {
+        margin: auto 0;
+    }
+
+    nav .mobile {
+        display: inline;
+    }
+
+}
+
 /* Banner */
 
 .banner {
     background-color: #d8d8d8;
     width: 100%;
     display: flex;
+    padding-top: 64px;
 }
 
 .banner .banner-img {
@@ -77,13 +102,43 @@ nav ul li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.banner .banner-words h1 {
+    text-align: left;
+    padding-top: 0;
+}
+
+.banner .banner-words h4 {
+    margin: 0;
 }
 
 .banner .banner-words .button {
+    margin-top: 2rem;
     background-color: #4a4a4a;
     color: white;
     padding: 0.5rem 3rem;
     width: 6rem;
+    border: 1px solid #4a4a4a;
+    transition: all 1s;
+}
+
+.banner .banner-words .button:hover {
+    background-color: #f5f4f4;
+    color: #4a4a4a;
+    border: 1px solid #4a4a4a;
+}
+
+@media only screen and (max-width: 425px) {
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner .banner-img {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 /* Quote and Information */
@@ -134,6 +189,28 @@ nav ul li {
     vertical-align: middle;
 }
 
+@media only screen and (max-width: 425px) {
+    .quote {
+        display: none;
+    }
+
+    .information {
+        width: 100%;
+    }
+
+    .information .information-container {
+        flex-direction: column;
+    }
+
+    .information .information-container .information-img {
+        width: 100%;
+    }
+
+    .information .information-container .information-words {
+        width: 100%;
+    }
+}
+
 /* Courses */
 
 .courses {
@@ -141,7 +218,6 @@ nav ul li {
     flex-direction: column;
     padding: 2rem 3.5rem;
     background-color:  #d8d8d8;
-    width: 100%;
 }
 
 .courses h1 {
@@ -168,6 +244,47 @@ nav ul li {
 
 .courses .course-container-main .course-container .course-words {
     padding: 1rem;
+}
+
+@media only screen and (max-width: 425px) {
+    
+    .courses {
+        background-color: #f5f4f4;
+        border-top: 1px solid #d8d8d8;
+        border-bottom: 1px solid #d8d8d8;
+    }
+
+    .courses h1 {
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 1rem;
+    }
+
+    .courses .course-container-main {
+        display: block;
+    }
+
+    .courses .course-container-main .course-container {
+        background-color: #d8d8d8;
+        width: 100%;
+        margin: 0,
+    }
+
+    .courses .course-container-main .course-container img {
+        display: none;
+    }
+
+    .courses .course-container-main .course-container .course-words {
+        padding-bottom: 1.5rem;
+    }
+
+    .courses .course-container-main .course-container .course-words h2 {
+        margin: 0;
+    }
+
+    .courses .course-container-main .course-container .course-words p {
+        display: none;
+    }
 }
 
 /* Thesis Exhibit */
@@ -208,12 +325,33 @@ h1 {
     vertical-align: middle;
 }
 
+@media only screen and (max-width: 425px) {
+
+    .exhibit .video {
+        width: 100%;
+    }
+
+    .exhibit .video h2, .exhibit .video p {
+        display: none;
+    }
+
+    .exhibit .thesis {
+        display: none;
+    }
+}
+
 /* Footer */
 
 footer {
     border-top: 1px solid  #d8d8d8;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.5rem;
+}
+
+@media only screen and (max-width: 425px) {
+
+    footer .browser {
+        display: none;
+    }
 }
