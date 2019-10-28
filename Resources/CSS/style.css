@@ -267,7 +267,7 @@ nav ul li {
     .courses .course-container-main .course-container {
         background-color: #d8d8d8;
         width: 100%;
-        margin: 0,
+        margin: 1rem 0;
     }
 
     .courses .course-container-main .course-container img {
